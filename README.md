@@ -11,17 +11,31 @@ Solutions des exercices du **Sprint 0** (pages 1 à 7), organisées selon la bon
 
 → Fichier principal : `sprint0_exercices.c`
 
-## Comment utiliser
-
-Pour tester un exercice :
-1. Commentez les autres blocs (/* ... */)
-2. Laissez uniquement l'exercice voulu actif
-3. Compilez et exécutez
+## Compilation avec Makefile
 
 ```bash
-gcc -o sprint0 sprint0_exercices.c
+# Compiler
+make
+
+# Compiler et exécuter
+make run
+
+# Nettoyer (supprimer l'exécutable)
+make clean
+```
+
+Ou manuellement :
+```bash
+gcc -Wall -Wextra -o sprint0 sprint0_exercices.c
 ./sprint0
 ```
+
+## Comment tester un exercice
+
+1. Ouvre `sprint0_exercices.c`
+2. Commente les blocs des exercices que tu ne veux pas (`/* ... */`)
+3. Décommente uniquement l'exercice à tester
+4. Lance `make run`
 
 ## Contenu du fichier
 
