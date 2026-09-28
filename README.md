@@ -1,41 +1,41 @@
 # Sprint 0 – Premiers pas en C
 
-Solutions des exercices du **Sprint 0** (pages 1 à 7 du cours).
+Solutions des exercices du **Sprint 0** (pages 1 à 7), organisées selon la bonne pratique de Dorine Seudi.
 
-## Contenu
+## Organisation
 
-| Fichier | Description |
-|---------|-------------|
-| `activite1_premier_programme.c` | Programme de base « Bonjour ! » |
-| `exercice1_message.c` | Afficher un message avec le prénom |
-| `exercice2_deux_messages.c` | Deux messages sur deux lignes |
-| `exercice3_plusieurs_messages.c` | Plusieurs messages différents |
-| `exercice4_personnalise.c` | Programme personnalisé (≥ 5 lignes) |
-| `exercice5_plusieurs_lignes.c` | Utilisation de `\n` |
-| `exercice6_presentation.c` | Présentation personnelle |
-| `exercice7_dessin_ascii.c` | Dessins ASCII |
-| `exercice8_carte_visite.c` | Carte de visite |
-| `exercice9_signature.c` | Signature ASCII |
-| `exercice10_programme_libre.c` | Programme libre (logo / citation) |
-| `defi_menu.c` | Défi : écran de menu |
+**1 seul fichier `.c`** avec :
+- un seul `#include`
+- un seul `main()`
+- les exercices séparés par des commentaires
 
-## Compilation
+→ Fichier principal : `sprint0_exercices.c`
+
+## Comment utiliser
+
+Pour tester un exercice :
+1. Commentez les autres blocs (/* ... */)
+2. Laissez uniquement l'exercice voulu actif
+3. Compilez et exécutez
 
 ```bash
-gcc -o programme fichier.c
-./programme
+gcc -o sprint0 sprint0_exercices.c
+./sprint0
 ```
 
-Ou dans VS Code avec l’extension C/C++.
+## Contenu du fichier
 
-## Structure d’un programme C (rappel)
-
-```c
-#include <stdio.h>   // bibliothèque d’entrées/sorties
-
-int main()           // point d’entrée du programme
-{
-    printf("...");   // affichage
-    return 0;        // fin correcte
-}
-```
+| Section | Description |
+|---------|-------------|
+| Activité 1 | Programme de base « Bonjour ! » |
+| Exercice 1 | Afficher un message avec le prénom |
+| Exercice 2 | Deux messages |
+| Exercice 3 | Plusieurs messages |
+| Exercice 4 | Programme personnalisé |
+| Exercice 5 | Plusieurs lignes avec `\n` |
+| Exercice 6 | Présentation personnelle |
+| Exercice 7 | Dessins ASCII |
+| Exercice 8 | Carte de visite |
+| Exercice 9 | Signature ASCII |
+| Exercice 10 | Programme libre |
+| Défi | Écran de menu |

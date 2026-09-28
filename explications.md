@@ -6,7 +6,7 @@
 #include <stdio.h>
 ```
 - **Rôle** : inclut la bibliothèque standard d’entrées/sorties.
-- Permet d’utiliser `printf()` (et plus tard `scanf()`).
+- Permet d’utiliser `printf()`.
 
 ```c
 int main()
@@ -39,10 +39,18 @@ return 0;
    → `main()`
 
 2. **Pourquoi utilise-t-on `printf()` ?**  
-   → Pour afficher du texte (ou des variables) à l’écran.
+   → Pour afficher du texte à l’écran.
 
 3. **Que signifie `return 0;` ?**  
    → Le programme s’est terminé sans erreur.
 
 4. **Que se passe-t-il en cas d’erreur de syntaxe ?**  
    → Le compilateur refuse de compiler et affiche un message d’erreur.
+
+## Organisation (bonne pratique de Dorine)
+
+- **1 seul fichier .c**
+- **1 seul `#include`**
+- **1 seul `main()`**
+- Exercices séparés par des commentaires
+- Pour tester un exercice : commentez les autres blocs
