@@ -1,55 +1,89 @@
-# Sprint 0 – Premiers pas en C
-
-Solutions des exercices du **Sprint 0** (pages 1 à 7), organisées selon la bonne pratique de Dorine Seudi.
-
-## Organisation
-
-**1 seul fichier `.c`** avec :
-- un seul `#include`
-- un seul `main()`
-- les exercices séparés par des commentaires
-
-→ Fichier principal : `sprint0_exercices.c`
-
-## Compilation avec Makefile
-
-```bash
-# Compiler
-make
-
-# Compiler et exécuter
-make run
-
-# Nettoyer (supprimer l'exécutable)
-make clean
-```
-
-Ou manuellement :
-```bash
-gcc -Wall -Wextra -o sprint0 sprint0_exercices.c
-./sprint0
-```
-
-## Comment tester un exercice
-
-1. Ouvre `sprint0_exercices.c`
-2. Commente les blocs des exercices que tu ne veux pas (`/* ... */`)
-3. Décommente uniquement l'exercice à tester
-4. Lance `make run`
-
-## Contenu du fichier
-
-| Section | Description |
-|---------|-------------|
-| Activité 1 | Programme de base « Bonjour ! » |
-| Exercice 1 | Afficher un message avec le prénom |
-| Exercice 2 | Deux messages |
-| Exercice 3 | Plusieurs messages |
-| Exercice 4 | Programme personnalisé |
-| Exercice 5 | Plusieurs lignes avec `\n` |
-| Exercice 6 | Présentation personnelle |
-| Exercice 7 | Dessins ASCII |
-| Exercice 8 | Carte de visite |
-| Exercice 9 | Signature ASCII |
-| Exercice 10 | Programme libre |
-| Défi | Écran de menu |
+#include <stdio.h>
+ 
+int main() {
+// ==========================================
+// EXERCICE 1 - Modifier le message
+// ==========================================
+printf("--- Exercice 1 ---\n");
+printf("Bonjour Madame.\n");
+printf("Bonjour Monsieur.\n");
+printf("nassim\n\n");
+ 
+// ==========================================
+// EXERCICE 2 - Plusieurs lignes
+// ==========================================
+printf("--- Exercice 2 ---\n");
+printf("Bonjour.\n");
+printf("Je m'appelle Paul.\n");
+printf("J'apprends le langage C.\n");
+printf("Découvrir naturellement \\n.\n\n");
+ 
+// ==========================================
+// EXERCICE 3 - Présentation personnelle
+// ==========================================
+printf("--- Exercice 3 ---\n");
+printf("Nom : maouche\n");
+printf("Prénom : nassim\n");
+printf("Classe : 6eme B\n");
+printf("Option : Informatique\n\n");
+printf("Je m'appelle nassim...\n");
+printf("J'ai 18 ans.\n");
+printf("J'aime la boxe ...\n\n");
+ 
+// ==========================================
+// EXERCICE 4 - Dessin ASCII
+// ==========================================
+printf("--- Exercice 4 ---\n");
+printf("*****\n");
+printf("*****\n");
+printf("*****\n");
+printf("*****\n\n");
+ 
+printf("+\n");
+printf("++\n");
+printf("+++\n");
+printf("++++\n");
+printf("+++++\n\n");
+ 
+// ==========================================
+// EXERCICE 5 - Carte de visite
+// ==========================================
+printf("--- Exercice 5 ---\n");
+printf("*********************************\n");
+printf("* Ma présentation *\n");
+printf("*********************************\n");
+printf("Nom : maouche\n");
+printf("Prénom : nassim\n");
+printf("Classe : 6ème D\n");
+printf("Email : maouchenassim70@gmail.com\n");
+printf("*********************************\n\n");
+ 
+// ==========================================
+// EXERCICE 6 - Signature
+// ==========================================
+printf("--- Exercice 6 ---\n");
+printf(" AAAA \nA A\nAAAAAA\nA A\nA A\n\n");
+ 
+// ==========================================
+// EXERCICE 7 - Programme libre
+// ==========================================
+printf("--- Exercice 7 ---\n");
+printf("=== MES JEUX PRÉFÉRÉS ===\n");
+printf("1. RPG / foot\n");
+printf("2. Jeux de tir / FPS\n");
+printf("3. Jeux de guerre \n\n");
+ 
+// ==========================================
+// DÉFI - Écran de jeu (Page 7)
+// ==========================================
+printf("--- Défi Page 7 ---\n");
+printf("======================================\n");
+printf(" BIENVENUE DANS MON PROGRAMME \n");
+printf("======================================\n");
+printf("1. Jouer\n");
+printf("2. Options\n");
+printf("3. Quitter\n");
+printf("======================================\n");
+ 
+return 0;
+}
